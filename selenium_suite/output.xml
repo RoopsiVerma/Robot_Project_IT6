@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220506 09:50:15.038" rpa="false" schemaversion="3">
+<suite id="s1" name="Demoo4 suite" source="C:\Users\hp\PycharmProjects\robot_project\selenium_suite\Demoo4_suite.robot">
+<test id="s1-t1" name="TC1" line="6">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>Path</arg>
+<arg>C:\\Users\\hp\\PycharmProjects\\robot_project\\selenium_suite\\drive</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220506 09:50:15.483" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\hp\.ipython;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;bin\com.pantech.myModule;C:\Users\hp\eclipse-workspace;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\PycharmProjects\robot_project\selenium_suite\drive'.</msg>
+<status status="PASS" starttime="20220506 09:50:15.483" endtime="20220506 09:50:15.483"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.salesforce.com/in/form/signup/freetrial-sales/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220506 09:50:15.485" level="INFO">Opening browser 'chrome' to base url 'https://www.salesforce.com/in/form/signup/freetrial-sales/'.</msg>
+<status status="PASS" starttime="20220506 09:50:15.485" endtime="20220506 09:50:23.203"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220506 09:50:23.204" endtime="20220506 09:50:23.371"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220506 09:50:23.371" endtime="20220506 09:50:23.371"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=UserFirstName</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 09:50:23.371" level="INFO">Typing text 'John' into text field 'name=UserFirstName'.</msg>
+<status status="PASS" starttime="20220506 09:50:23.371" endtime="20220506 09:50:23.648"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=UserLastName</arg>
+<arg>wick</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 09:50:23.652" level="INFO">Typing text 'wick' into text field 'name=UserLastName'.</msg>
+<status status="PASS" starttime="20220506 09:50:23.652" endtime="20220506 09:50:23.999"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=UserEmail</arg>
+<arg>John@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 09:50:24.000" level="INFO">Typing text 'John@gmail.com' into text field 'name=UserEmail'.</msg>
+<status status="PASS" starttime="20220506 09:50:24.000" endtime="20220506 09:50:24.267"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=UserTitle</arg>
+<arg>IT Manager</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220506 09:50:24.268" level="INFO">Selecting options from selection list 'name=UserTitle' by label IT Manager.</msg>
+<status status="PASS" starttime="20220506 09:50:24.267" endtime="20220506 09:50:24.419"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=CompanyName</arg>
+<arg>LT</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 09:50:24.420" level="INFO">Typing text 'LT' into text field 'name=CompanyName'.</msg>
+<status status="PASS" starttime="20220506 09:50:24.420" endtime="20220506 09:50:24.603"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>name=CompanyEmployees</arg>
+<arg>250</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220506 09:50:24.606" level="INFO">Selecting options from selection list 'name=CompanyEmployees' by value 250.</msg>
+<status status="PASS" starttime="20220506 09:50:24.605" endtime="20220506 09:50:24.736"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=CompanyCountry</arg>
+<arg>United Kingdom</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220506 09:50:24.737" level="INFO">Selecting options from selection list 'name=CompanyCountry' by label United Kingdom.</msg>
+<status status="PASS" starttime="20220506 09:50:24.737" endtime="20220506 09:50:24.891"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220506 09:50:24.891" level="INFO">Clicking element 'xpath='.</msg>
+<msg timestamp="20220506 09:50:25.206" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220506 09:50:25.207" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression  because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.
+  (Session info: chrome=101.0.4951.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003CB8F3+2406643]
+	Ordinal0 [0x0035AF31+1945393]
+	Ordinal0 [0x0024C748+837448]
+	Ordinal0 [0x0024F154+848212]
+	Ordinal0 [0x0024F012+847890]
+	Ordinal0 [0x0024F2A0+848544]
+	Ordinal0 [0x00278FF5+1019893]
+	Ordinal0 [0x0027957B+1021307]
+	Ordinal0 [0x002A63AC+1205164]
+	Ordinal0 [0x002942C4+1131204]
+	Ordinal0 [0x002A4682+1197698]
+	Ordinal0 [0x00294096+1130646]
+	Ordinal0 [0x0026E636+976438]
+	Ordinal0 [0x0026F546+980294]
+	GetHandleVerifier [0x00639612+2498066]
+	GetHandleVerifier [0x0062C920+2445600]
+	GetHandleVerifier [0x00464F2A+579370]
+	GetHandleVerifier [0x00463D36+574774]
+	Ordinal0 [0x00361C0B+1973259]
+	Ordinal0 [0x00366688+1992328]
+	Ordinal0 [0x00366775+1992565]
+	Ordinal0 [0x0036F8D1+2029777]
+	BaseThreadInitThunk [0x768DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77057A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77057A4E+238]
+</msg>
+<status status="FAIL" starttime="20220506 09:50:24.891" endtime="20220506 09:50:25.218"/>
+</kw>
+<status status="FAIL" starttime="20220506 09:50:15.482" endtime="20220506 09:50:25.220">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression  because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.
+  (Session info: chrome=101.0.4951.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003CB8F3+2406643]
+	Ordinal0 [0x0035AF31+1945393]
+	Ordinal0 [0x0024C748+837448]
+	Ordinal0 [0x0024F154+848212]
+	Ordinal0 [0x0024F012+847890]
+	Ordinal0 [0x0024F2A0+848544]
+	Ordinal0 [0x00278FF5+1019893]
+	Ordinal0 [0x0027957B+1021307]
+	Ordinal0 [0x002A63AC+1205164]
+	Ordinal0 [0x002942C4+1131204]
+	Ordinal0 [0x002A4682+1197698]
+	Ordinal0 [0x00294096+1130646]
+	Ordinal0 [0x0026E636+976438]
+	Ordinal0 [0x0026F546+980294]
+	GetHandleVerifier [0x00639612+2498066]
+	GetHandleVerifier [0x0062C920+2445600]
+	GetHandleVerifier [0x00464F2A+579370]
+	GetHandleVerifier [0x00463D36+574774]
+	Ordinal0 [0x00361C0B+1973259]
+	Ordinal0 [0x00366688+1992328]
+	Ordinal0 [0x00366775+1992565]
+	Ordinal0 [0x0036F8D1+2029777]
+	BaseThreadInitThunk [0x768DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77057A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77057A4E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20220506 09:50:15.047" endtime="20220506 09:50:25.226"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demoo4 suite">Demoo4 suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -16,4 +16,6 @@ TC1
     Switch Window   Add New
     Select From List By Label    id=btn btn-primary btn-add   Pharmacy
     Select From List By Label    id=form_messages_status    New
-    Select From List By Label    id=
+    Select From List By Label    id=users Jarvis,Fred
+    Input Text    xpath=//texttarea[@id='note']    hello
+    Click Element    id=cancel

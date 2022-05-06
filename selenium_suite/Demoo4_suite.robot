@@ -15,6 +15,9 @@ TC1
     Input Text    name=CompanyName    LT
     Select From List By Value    name=CompanyEmployees      250
     Select From List By Label    name=CompanyCountry        United Kingdom
-    Click Element    xpath=    
+    Select From List By Label    name=CompanyEmployees      101 - 500 employees
+    Click Element    xpath=//div[@class='checkbox-ui']
+    Click Element    name=start my free trial
+    Element Text Should Be    xpath=//span[contains(@id,'UserPhone')]    Enter a valid phone number
 
 

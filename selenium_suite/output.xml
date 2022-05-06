@@ -1,61 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220506 15:03:37.983" rpa="false" schemaversion="3">
-<suite id="s1" name="Demoo7 suite" source="C:\Users\hp\PycharmProjects\robot_project\selenium_suite\Demoo7_suite.robot">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220506 15:36:32.650" rpa="false" schemaversion="3">
+<suite id="s1" name="Demoo8 suite" source="C:\Users\hp\PycharmProjects\robot_project\selenium_suite\Demoo8_suite.robot">
 <test id="s1-t1" name="TC1" line="6">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>Path</arg>
 <arg>C:\\Users\\hp\\PycharmProjects\\robot_project\\selenium_suite\\drive</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220506 15:03:38.749" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\hp\.ipython;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;bin\com.pantech.myModule;C:\Users\hp\eclipse-workspace;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\PycharmProjects\robot_project\selenium_suite\drive'.</msg>
-<status status="PASS" starttime="20220506 15:03:38.748" endtime="20220506 15:03:38.749"/>
+<msg timestamp="20220506 15:36:33.107" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\hp\.ipython;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;bin\com.pantech.myModule;C:\Users\hp\eclipse-workspace;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\PycharmProjects\robot_project\selenium_suite\drive'.</msg>
+<status status="PASS" starttime="20220506 15:36:33.107" endtime="20220506 15:36:33.107"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220506 15:03:38.791" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220506 15:03:38.790" endtime="20220506 15:03:42.352"/>
+<msg timestamp="20220506 15:36:33.108" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220506 15:36:33.108" endtime="20220506 15:36:35.428"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220506 15:03:42.358" endtime="20220506 15:03:42.581"/>
+<status status="PASS" starttime="20220506 15:36:35.433" endtime="20220506 15:36:35.674"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220506 15:03:42.623" endtime="20220506 15:03:42.645"/>
+<status status="PASS" starttime="20220506 15:36:35.676" endtime="20220506 15:36:35.679"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<arg>url=https://netbanking.hdfcbank.com/netbanking/</arg>
+<arg>url=https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220506 15:03:42.674" level="INFO">Opening url 'https://netbanking.hdfcbank.com/netbanking/'</msg>
-<status status="PASS" starttime="20220506 15:03:42.674" endtime="20220506 15:03:46.034"/>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>xpath=//frame[@name='login_page']</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20220506 15:03:46.035" level="INFO">Selecting frame 'xpath=//frame[@name='login_page']'.</msg>
-<status status="PASS" starttime="20220506 15:03:46.035" endtime="20220506 15:03:46.117"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=fldLoginUserId</arg>
-<arg>roopsi123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220506 15:03:46.117" level="INFO">Typing text 'roopsi123' into text field 'name=fldLoginUserId'.</msg>
-<status status="PASS" starttime="20220506 15:03:46.117" endtime="20220506 15:03:46.259"/>
+<msg timestamp="20220506 15:36:35.680" level="INFO">Opening url 'https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm'</msg>
+<status status="PASS" starttime="20220506 15:36:35.680" endtime="20220506 15:36:40.921"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>link=CONTINUE</arg>
+<arg>xpath=//img[@alt='Go']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220506 15:03:46.260" level="INFO">Clicking element 'link=CONTINUE'.</msg>
-<status status="PASS" starttime="20220506 15:03:46.259" endtime="20220506 15:03:49.417"/>
+<msg timestamp="20220506 15:36:40.932" level="INFO">Clicking element 'xpath=//img[@alt='Go']'.</msg>
+<status status="PASS" starttime="20220506 15:36:40.931" endtime="20220506 15:36:41.036"/>
 </kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20220506 15:03:49.422" endtime="20220506 15:03:49.428"/>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<var>${alert_text}</var>
+<arg>action=ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20220506 15:36:41.036" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg timestamp="20220506 15:36:41.050" level="INFO">${alert_text} = Customer ID  cannot be left blank.</msg>
+<status status="PASS" starttime="20220506 15:36:41.036" endtime="20220506 15:36:41.050"/>
 </kw>
-<status status="PASS" starttime="20220506 15:03:38.744" endtime="20220506 15:03:49.429"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${alert_text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220506 15:36:41.051" endtime="20220506 15:36:41.052"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${alert_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220506 15:36:41.052" level="INFO">Customer ID  cannot be left blank.</msg>
+<status status="PASS" starttime="20220506 15:36:41.052" endtime="20220506 15:36:41.052"/>
+</kw>
+<status status="PASS" starttime="20220506 15:36:33.104" endtime="20220506 15:36:41.052"/>
 </test>
-<status status="PASS" starttime="20220506 15:03:37.986" endtime="20220506 15:03:49.432"/>
+<status status="PASS" starttime="20220506 15:36:32.659" endtime="20220506 15:36:41.052"/>
 </suite>
 <statistics>
 <total>
@@ -64,7 +66,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demoo7 suite">Demoo7 suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demoo8 suite">Demoo8 suite</stat>
 </suite>
 </statistics>
 <errors>

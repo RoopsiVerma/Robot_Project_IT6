@@ -13,9 +13,13 @@ TC1
     Input Password    id=clearPass    pass
     Select From List By Label    name=languageChoice    English (Indian)
     Click Element    id=login-button
+    Click Element    xpath=//div[text()='Messages']
+    Unselect Frame      xpath=//iframe[contains(@src,'messages.php')]
     Switch Window   Add New
-    Select From List By Label    id=btn btn-primary btn-add   Pharmacy
+    Select From List By Label    id=form_note_type   Pharmacy
     Select From List By Label    id=form_messages_status    New
-    Select From List By Label    id=users Jarvis,Fred
-    Input Text    xpath=//texttarea[@id='note']    hello
-    Click Element    id=cancel
+    Select From List By Index    id=users
+    Input Text    id-note    Hello
+    Click Element    id=newnote
+    Page Should Contain Element    id=error_reply_to
+    Click Element    id=send

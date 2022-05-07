@@ -13,15 +13,15 @@ TC1
 TC2
 
     FOR     ${i}    IN RANGE    0   4   1
-    Log    ${COLORS}[${i}]
-    Log To Console    ${COLORS}[${i}]
+        Log    ${COLORS}[${i}]
+        Log To Console    ${COLORS}[${i}]
     END
 
 TC3
     FOR    ${i}    IN    @{COLORS}
         Log    ${i}
         Log To Console    ${i}
-        END
+     END
 
     END
 

@@ -1,76 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220506 17:25:45.211" rpa="false" schemaversion="3">
-<suite id="s1" name="Demoo suite" source="C:\Users\hp\PycharmProjects\robot_project\selenium_suite\Demoo_suite.robot">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220507 09:48:27.275" rpa="false" schemaversion="3">
+<suite id="s1" name="Demoo9 suite" source="C:\Users\hp\PycharmProjects\robot_project\selenium_suite\Demoo9_suite.robot">
 <test id="s1-t1" name="TC1" line="6">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>Path</arg>
 <arg>C:\\Users\\hp\\PycharmProjects\\robot_project\\selenium_suite\\drive</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220506 17:25:45.820" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\hp\.ipython;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;bin\com.pantech.myModule;C:\Users\hp\eclipse-workspace;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\PycharmProjects\robot_project\selenium_suite\drive'.</msg>
-<status status="PASS" starttime="20220506 17:25:45.820" endtime="20220506 17:25:45.820"/>
+<msg timestamp="20220507 09:48:27.877" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\hp\.ipython;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;bin\com.pantech.myModule;C:\Users\hp\eclipse-workspace;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\PycharmProjects\robot_project\selenium_suite\drive'.</msg>
+<status status="PASS" starttime="20220507 09:48:27.877" endtime="20220507 09:48:27.877"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220506 17:25:45.820" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220506 17:25:45.820" endtime="20220506 17:25:47.945"/>
+<msg timestamp="20220507 09:48:27.889" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220507 09:48:27.888" endtime="20220507 09:48:30.249"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220506 17:25:47.945" endtime="20220506 17:25:48.211"/>
+<status status="PASS" starttime="20220507 09:48:30.257" endtime="20220507 09:48:30.422"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220506 17:25:48.217" endtime="20220506 17:25:48.221"/>
+<status status="PASS" starttime="20220507 09:48:30.437" endtime="20220507 09:48:30.438"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<arg>url=https://smallpdf.com/pdf-to-word</arg>
+<arg>url=https://demo.openemr.io/b/openemr</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220506 17:25:48.222" level="INFO">Opening url 'https://smallpdf.com/pdf-to-word'</msg>
-<status status="PASS" starttime="20220506 17:25:48.222" endtime="20220506 17:25:49.989"/>
+<msg timestamp="20220507 09:48:30.439" level="INFO">Opening url 'https://demo.openemr.io/b/openemr'</msg>
+<status status="PASS" starttime="20220507 09:48:30.439" endtime="20220507 09:48:40.340"/>
 </kw>
-<kw name="Choose File" library="SeleniumLibrary">
-<arg>xpath=//input[@type='file']</arg>
-<arg>C:${/}Users${/}hp${/}OneDrive${/}Desktop${/}InternshipOfferLetterRoopsiVerma.pdf</arg>
-<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20220506 17:25:49.989" level="INFO">Sending C:\Users\hp\OneDrive\Desktop\InternshipOfferLetterRoopsiVerma.pdf to browser.</msg>
-<status status="PASS" starttime="20220506 17:25:49.989" endtime="20220506 17:25:50.187"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=authUser</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220507 09:48:40.342" level="INFO">Typing text 'admin' into text field 'id=authUser'.</msg>
+<status status="PASS" starttime="20220507 09:48:40.341" endtime="20220507 09:48:40.497"/>
 </kw>
-<kw name="Get Title" library="SeleniumLibrary">
-<var>${current_title}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20220506 17:25:50.200" level="INFO">${current_title} = PDF to Word Converter - 100% Free</msg>
-<status status="PASS" starttime="20220506 17:25:50.187" endtime="20220506 17:25:50.200"/>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=clearPass</arg>
+<arg>pass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220507 09:48:40.497" level="INFO">Typing password into text field 'id=clearPass'.</msg>
+<msg timestamp="20220507 09:48:40.558" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220507 09:48:40.628" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220507 09:48:40.497" endtime="20220507 09:48:40.628"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${current_title}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220506 17:25:50.201" endtime="20220506 17:25:50.202"/>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=languageChoice</arg>
+<arg>English (Indian)</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220507 09:48:40.632" level="INFO">Selecting options from selection list 'name=languageChoice' by label English (Indian).</msg>
+<status status="PASS" starttime="20220507 09:48:40.632" endtime="20220507 09:48:40.752"/>
 </kw>
-<kw name="Get Location" library="SeleniumLibrary">
-<var>${loc}</var>
-<doc>Returns the current browser window URL.</doc>
-<msg timestamp="20220506 17:25:50.215" level="INFO">${loc} = https://smallpdf.com/pdf-to-word</msg>
-<status status="PASS" starttime="20220506 17:25:50.202" endtime="20220506 17:25:50.215"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220507 09:48:40.753" level="INFO">Clicking element 'id=login-button'.</msg>
+<status status="PASS" starttime="20220507 09:48:40.752" endtime="20220507 09:48:48.774"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${loc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220506 17:25:50.215" endtime="20220506 17:25:50.215"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[text()='Messages']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220507 09:48:48.776" level="INFO">Clicking element 'xpath=//div[text()='Messages']'.</msg>
+<status status="PASS" starttime="20220507 09:48:48.776" endtime="20220507 09:48:48.889"/>
 </kw>
-<status status="PASS" starttime="20220506 17:25:45.820" endtime="20220506 17:25:50.215"/>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<arg>xpath=//iframe[contains(@src,'messages.php')]</arg>
+<doc>Sets the main frame as the current frame.</doc>
+<msg timestamp="20220507 09:48:48.890" level="FAIL">Keyword 'SeleniumLibrary.Unselect Frame' expected 0 arguments, got 1.</msg>
+<status status="FAIL" starttime="20220507 09:48:48.890" endtime="20220507 09:48:48.890"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>Add New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20220507 09:48:48.891" endtime="20220507 09:48:48.891"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=form_note_type</arg>
+<arg>Pharmacy</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220507 09:48:48.891" endtime="20220507 09:48:48.891"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=form_messages_status</arg>
+<arg>New</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220507 09:48:48.892" endtime="20220507 09:48:48.892"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>id=users</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20220507 09:48:48.893" endtime="20220507 09:48:48.893"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id-note</arg>
+<arg>Hello</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220507 09:48:48.894" endtime="20220507 09:48:48.894"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=newnote</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220507 09:48:48.895" endtime="20220507 09:48:48.895"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>id=error_reply_to</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20220507 09:48:48.896" endtime="20220507 09:48:48.896"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=send</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220507 09:48:48.897" endtime="20220507 09:48:48.897"/>
+</kw>
+<status status="FAIL" starttime="20220507 09:48:27.877" endtime="20220507 09:48:48.897">Keyword 'SeleniumLibrary.Unselect Frame' expected 0 arguments, got 1.</status>
 </test>
-<status status="PASS" starttime="20220506 17:25:45.211" endtime="20220506 17:25:50.215"/>
+<status status="FAIL" starttime="20220507 09:48:27.279" endtime="20220507 09:48:48.897"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demoo suite">Demoo suite</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demoo9 suite">Demoo9 suite</stat>
 </suite>
 </statistics>
 <errors>

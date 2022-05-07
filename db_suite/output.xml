@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220507 12:12:36.689" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo2" source="C:\Users\hp\PycharmProjects\robot_project\db_suite\demo2.robot">
+<test id="s1-t1" name="TC5" line="34">
+<kw name="Connect To Database" library="DatabaseLibrary" type="SETUP">
+<arg>dbapiModuleName=pymysql</arg>
+<arg>dbName=dbfree_db</arg>
+<arg>dbUsername=dbfree_db</arg>
+<arg>dbPassword=12345678</arg>
+<arg>dbHost=db4free.net</arg>
+<arg>dbPort=3306</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<msg timestamp="20220507 12:12:36.814" level="INFO">Connecting using : pymysql.connect(db=dbfree_db, user=dbfree_db, passwd=12345678, host=db4free.net, port=3306, charset=None) </msg>
+<msg timestamp="20220507 12:12:46.843" level="FAIL">OperationalError: (2003, "Can't connect to MySQL server on 'db4free.net' (timed out)")</msg>
+<status status="FAIL" starttime="20220507 12:12:36.751" endtime="20220507 12:12:46.843"/>
+</kw>
+<kw name="Disconnect From Database" library="DatabaseLibrary" type="TEARDOWN">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20220507 12:12:46.843" level="INFO">Executing : Disconnect From Database</msg>
+<msg timestamp="20220507 12:12:46.843" level="FAIL">AttributeError: 'NoneType' object has no attribute 'close'</msg>
+<status status="FAIL" starttime="20220507 12:12:46.843" endtime="20220507 12:12:46.843">AttributeError: 'NoneType' object has no attribute 'close'</status>
+</kw>
+<status status="FAIL" starttime="20220507 12:12:36.751" endtime="20220507 12:12:46.843">Setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on 'db4free.net' (timed out)")
+
+Also teardown failed:
+AttributeError: 'NoneType' object has no attribute 'close'</status>
+</test>
+<status status="FAIL" starttime="20220507 12:12:36.689" endtime="20220507 12:12:46.858"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo2">Demo2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

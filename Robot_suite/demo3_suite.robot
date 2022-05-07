@@ -30,5 +30,10 @@ TC3
     Log    ${fruits}
 
 
+TC4
+    @{fruits}   Create List     apple   grapes      orange  mango
+    FOR     ${i}    IN RANGE    0   4   1
+    Log    ${fruits}[${i}]
+    END
 
 
